@@ -1,0 +1,79 @@
+$activeBtnColor:rgb(83, 83, 83);
+
+%border{
+    border:1px solid #c5c5c5;
+}
+
+%cursor{
+    cursor:pointer;  
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('../../../public/fonts/Roboto-Regular.ttf');
+}
+
+body{
+    font-family: Roboto;
+    font-size: 16px;
+}
+
+main{
+    max-width: 750px;
+    margin: 2rem auto;
+}
+
+button{
+    @extend %border;
+    @extend %cursor;
+    padding: .5rem 1rem;
+    background: none;
+
+    &:hover, &.active{
+        background: $activeBtnColor;
+        color:#d8d8d8
+    }
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 1rem .5rem;
+}
+
+tbody{
+    text-align: center;
+}
+
+table,thead tr,tbody tr {
+    @extend %border;
+}
+
+tbody tr {
+    @extend %cursor;
+    &:hover{
+        background: #f6f6f6;
+    }
+}
+
+ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+li{
+    @extend %cursor;
+}
+
+form{
+    max-width: 300px;
+}
+
+.data-size-btn{
+    margin-right: .5rem;
+}
+

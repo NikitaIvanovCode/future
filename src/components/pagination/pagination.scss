@@ -1,0 +1,18 @@
+.pagination-list{
+    display: flex;
+    max-width: 600px;
+    margin: auto;
+    justify-content: center;
+}
+
+.pagination-list__item{
+    padding:.5rem;
+
+    &:hover, .active{
+        color:rgb(30, 221, 211);
+    }
+
+    &.active{
+        color:rgb(30, 221, 211);
+    }
+}
